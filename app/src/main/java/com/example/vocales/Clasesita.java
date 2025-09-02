@@ -38,8 +38,8 @@ public class Clasesita {
         int cuantas = texto.length();
         int os =0;
         for (int i =0; i< cuantas; i++)
-            if (texto.charAt(i) == 'o' || texto.charAt(i) == 'o'
-                    || texto.charAt(i) == 'á' || texto.charAt(i) == 'Á')
+            if (texto.charAt(i) == 'o' || texto.charAt(i) == 'O'
+                    || texto.charAt(i) == 'ó' || texto.charAt(i) == 'Ó')
                 ++os;
         return os;
     }
@@ -47,8 +47,8 @@ public class Clasesita {
         int cuantas = texto.length();
         int us =0;
         for (int i =0; i< cuantas; i++)
-            if (texto.charAt(i) == 'a' || texto.charAt(i) == 'A'
-                    || texto.charAt(i) == 'á' || texto.charAt(i) == 'Á')
+            if (texto.charAt(i) == 'u' || texto.charAt(i) == 'U'
+                    || texto.charAt(i) == 'ú' || texto.charAt(i) == 'Ú')
                 ++us;
         return us;
     }

@@ -52,4 +52,40 @@ public class Clasesita {
                 ++us;
         return us;
     }
+
+    public int consonantes(){
+        int cuantas = texto.length();
+        int letras =0;
+        for (int i =0; i< cuantas; i++)
+            if (Character.isLetter(texto.charAt(i)))
+                ++letras;
+        return letras - vocalA() - vocalE() - vocalI() - vocalO() - vocalU();
+    }
+
+    public int espacios(){
+        int cuantas = texto.length();
+        int esp =0;
+        for (int i =0; i< cuantas; i++)
+            if (texto.charAt(i) == ' ')
+                ++esp;
+        return esp;
+    }
+
+    public int numeros(){
+        int cuantas = texto.length();
+        int nums =0;
+        for (int i =0; i< cuantas; i++)
+            if (Character.isDigit(texto.charAt(i)))
+                ++nums;
+        return nums;
+    }
+
+    public int especiales(){
+        int cuantas = texto.length();
+        int esp =0;
+        for (int i =0; i< cuantas; i++)
+            if (!Character.isLetterOrDigit(texto.charAt(i)) && texto.charAt(i) != ' ')
+                ++esp;
+        return esp;
+    }
 }

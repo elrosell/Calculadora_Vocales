@@ -3,21 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:layout_margin="70dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="70dp"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="Escribe aquí"
         android:id="@+id/texto"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/voc"
         android:text="Número de Vocales"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cons"
+        android:text="Número de Consonantes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/esp"
+        android:text="Número de Espacios"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num"
+        android:text="Cantidad de Números"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/car"
+        android:text="Número de Caracteres Esp."/>
 
 
 

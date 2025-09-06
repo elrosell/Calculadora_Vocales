@@ -19,7 +19,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         editadito = findViewById(R.id.texto);
+
         botoncito = findViewById(R.id.voc);
+        botoncito.setOnClickListener(this);
+
+        botoncito = findViewById(R.id.cons);
+        botoncito.setOnClickListener(this);
+
+        botoncito = findViewById(R.id.esp);
+        botoncito.setOnClickListener(this);
+
+        botoncito = findViewById(R.id.num);
+        botoncito.setOnClickListener(this);
+
+        botoncito = findViewById(R.id.car);
         botoncito.setOnClickListener(this);
 
     }
@@ -28,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Clasesita objetito = new Clasesita();
         objetito.setTexto(editadito.getText().toString());
-
         if (objetito.vocalA() == 1)
         {
         Toast.makeText(this, "Tiene " + objetito.vocalA() + " a", Toast.LENGTH_SHORT).show();
@@ -75,4 +87,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
+
 }
